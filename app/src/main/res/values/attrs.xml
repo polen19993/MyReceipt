@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="MaterialRippleLayout">
+		<attr name="rippleColor1" format="color" />
+		<attr name="rippleDimension" format="dimension" />
+		<attr name="rippleOverlay" format="boolean" />
+		<attr name="rippleAlpha" format="float" />
+		<attr name="rippleDuration" format="integer" />
+		<attr name="rippleFadeDuration" format="integer" />
+		<attr name="rippleHover" format="boolean" />
+		<attr name="rippleBackground" format="color" />
+		<attr name="rippleDelayClick" format="boolean" />
+		<attr name="ripplePersistent" format="boolean" />
+		<attr name="rippleInAdapter" format="boolean"/>
+	</declare-styleable>
+
+	<declare-styleable name="FloatLabeledEditText">
+		<attr name="fletFloatingHint" format="string" />
+		<attr name="fletSingleLine" format="boolean" />
+		<attr name="fletPassword" format="boolean" />
+		<attr name="fletTextBackground" format="reference" />
+		<attr name="fletTextGravity">
+			<flag name="top" value="0x30" />
+			<flag name="bottom" value="0x50" />
+			<flag name="left" value="0x03" />
+			<flag name="right" value="0x05" />
+			<flag name="center_vertical" value="0x10" />
+			<flag name="fill_vertical" value="0x70" />
+			<flag name="center_horizontal" value="0x01" />
+			<flag name="fill_horizontal" value="0x07" />
+			<flag name="center" value="0x11" />
+			<flag name="fill" value="0x77" />
+			<flag name="clip_vertical" value="0x80" />
+			<flag name="clip_horizontal" value="0x08" />
+			<flag name="start" value="0x00800003" />
+			<flag name="end" value="0x00800005" />
+		</attr>
+		<attr name="fletTextLines" format="integer" />
+		<attr name="fletHintTextColor" format="reference|color" />
+		<attr name="fletTextColor" format="reference|color" />
+		<attr name="fletImeActionLabel" format="string" />
+		<attr name="fletImeActionId" format="integer" />
+		<attr name="fletInputType">
+			<flag name="none" value="0x00000000" />
+			<flag name="text" value="0x00000001" />
+			<flag name="textCapCharacters" value="0x00001001" />
+			<flag name="textCapWords" value="0x00002001" />
+			<flag name="textCapSentences" value="0x00004001" />
+			<flag name="textAutoCorrect" value="0x00008001" />
+			<flag name="textAutoComplete" value="0x00010001" />
+			<flag name="textMultiLine" value="0x00020001" />
+			<flag name="textImeMultiLine" value="0x00040001" />
+			<flag name="textNoSuggestions" value="0x00080001" />
+			<flag name="textUri" value="0x00000011" />
+			<flag name="textEmailAddress" value="0x00000021" />
+			<flag name="textEmailSubject" value="0x00000031" />
+			<flag name="textShortMessage" value="0x00000041" />
+			<flag name="textLongMessage" value="0x00000051" />
+			<flag name="textPersonName" value="0x00000061" />
+			<flag name="textPostalAddress" value="0x00000071" />
+			<flag name="textPassword" value="0x00000081" />
+			<flag name="textVisiblePassword" value="0x00000091" />
+			<flag name="textWebEditText" value="0x000000a1" />
+			<flag name="textFilter" value="0x000000b1" />
+			<flag name="textPhonetic" value="0x000000c1" />
+			<flag name="textWebEmailAddress" value="0x000000d1" />
+			<flag name="textWebPassword" value="0x000000e1" />
+			<flag name="number" value="0x00000002" />
+			<flag name="numberSigned" value="0x00001002" />
+			<flag name="numberDecimal" value="0x00002002" />
+			<flag name="numberPassword" value="0x00000012" />
+			<flag name="phone" value="0x00000003" />
+			<flag name="datetime" value="0x00000004" />
+			<flag name="date" value="0x00000014" />
+			<flag name="time" value="0x00000024" />
+		</attr>
+		<attr name="fletImeOptions">
+			<flag name="normal" value="0x00000000" />
+			<flag name="actionUnspecified" value="0x00000000" />
+			<flag name="actionNone" value="0x00000001" />
+			<flag name="actionGo" value="0x00000002" />
+			<flag name="actionSearch" value="0x00000003" />
+			<flag name="actionSend" value="0x00000004" />
+			<flag name="actionNext" value="0x00000005" />
+			<flag name="actionDone" value="0x00000006" />
+			<flag name="actionPrevious" value="0x00000007" />
+			<flag name="flagNoFullscreen" value="0x2000000" />
+			<flag name="flagNavigatePrevious" value="0x4000000" />
+			<flag name="flagNavigateNext" value="0x8000000" />
+			<flag name="flagNoExtractUi" value="0x10000000" />
+			<flag name="flagNoAccessoryAction" value="0x20000000" />
+			<flag name="flagNoEnterAction" value="0x40000000" />
+			<flag name="flagForceAscii" value="0x80000000" />
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="PullToRefresh">
+
+		<!-- A drawable to use as the background of the Refreshable View -->
+		<attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+		<!-- A drawable to use as the background of the Header and Footer Loading Views -->
+		<attr name="ptrHeaderBackground" format="reference|color" />
+
+		<!-- Text Color of the Header and Footer Loading Views -->
+		<attr name="ptrHeaderTextColor" format="reference|color" />
+
+		<!-- Text Color of the Header and Footer Loading Views Sub Header -->
+		<attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+		<!-- Mode of Pull-to-Refresh that should be used -->
+		<attr name="ptrMode">
+			<flag name="disabled" value="0x0" />
+			<flag name="pullFromStart" value="0x1" />
+			<flag name="pullFromEnd" value="0x2" />
+			<flag name="both" value="0x3" />
+			<flag name="manualOnly" value="0x4" />
+
+			<!-- These last two are depreacted -->
+			<flag name="pullDownFromTop" value="0x1" />
+			<flag name="pullUpFromBottom" value="0x2" />
+		</attr>
+
+		<!-- Whether the Indicator overlay(s) should be used -->
+		<attr name="ptrShowIndicator" format="reference|boolean" />
+
+		<!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+		<attr name="ptrDrawable" format="reference" />
+
+		<!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+		<attr name="ptrDrawableStart" format="reference" />
+
+		<!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+		<attr name="ptrDrawableEnd" format="reference" />
+
+		<!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+		<attr name="ptrOverScroll" format="reference|boolean" />
+
+		<!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+		<attr name="ptrHeaderTextAppearance" format="reference" />
+
+		<!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+		<attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+		<!-- Style of Animation should be used displayed when pulling. -->
+		<attr name="ptrAnimationStyle">
+			<flag name="rotate" value="0x0" />
+			<flag name="flip" value="0x1" />
+		</attr>
+
+		<!-- Whether the user can scroll while the View is Refreshing -->
+		<attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+		<!--
+			Whether PullToRefreshListView has it's extras enabled. This allows the user to be
+			able to scroll while refreshing, and behaves better. It acheives this by adding
+			Header and/or Footer Views to the ListView.
+		-->
+		<attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+		<!--
+			Whether the Drawable should be continually rotated as you pull. This only
+			takes effect when using the 'Rotate' Animation Style.
+		-->
+		<attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+		<!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+		<attr name="ptrAdapterViewBackground" format="reference|color" />
+		<attr name="ptrDrawableTop" format="reference" />
+		<attr name="ptrDrawableBottom" format="reference" />
+	</declare-styleable>
+
+
+	<!-- Theme attributes -->
+	<attr name="errorDrawable" format="reference" />
+	<attr name="emptyDrawableUploads" format="reference" />
+	<attr name="emptyDrawableMessages" format="reference" />
+	<attr name="emptyDrawableNotifications" format="reference" />
+	<attr name="repliesDrawable" format="reference" />
+	<attr name="cardBG" format="color" />
+	<attr name="toolBarPopupTheme" format="reference" />
+	<attr name="dividerColor" format="color" />
+
+	<declare-styleable name="ViewPager">
+		<attr name="swipingEnabled" format="boolean" />
+	</declare-styleable>
+
+	<declare-styleable name="MultiStateView">
+		<attr name="msv_loadingView" format="reference" />
+		<attr name="msv_emptyView" format="reference" />
+		<attr name="msv_errorView" format="reference" />
+		<attr name="msv_viewState" format="enum">
+			<enum name="content" value="0" />
+			<enum name="error" value="1" />
+			<enum name="empty" value="2" />
+			<enum name="loading" value="3" />
+		</attr>
+		<attr name="msv_animateViewChanges" format="boolean" />
+	</declare-styleable>
+
+</resources>

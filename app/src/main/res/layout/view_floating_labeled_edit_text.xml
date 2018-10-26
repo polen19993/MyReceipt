@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+	<TextView
+		android:id="@+id/FloatLabeledEditTextHint"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/dip_15"
+		android:paddingRight="@dimen/dip_15"
+		android:textSize="@dimen/dip_10" />
+	<EditText
+		android:id="@+id/FloatLabeledEditTextEditText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/dip_5"
+		android:background="@drawable/bg_edit_text" />
+</merge>

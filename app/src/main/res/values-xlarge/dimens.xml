@@ -1,0 +1,10 @@
+<resources>
+
+	<!-- XLarge -->
+
+	<dimen name="dip_5">10dip</dimen>
+	<dimen name="dip_10">20dip</dimen>
+	<dimen name="dip_15">30dip</dimen>
+	<dimen name="dip_25">50dip</dimen>
+
+</resources>

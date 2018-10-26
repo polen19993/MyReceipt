@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip_50"
+            android:background="?colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="?toolBarPopupTheme" >
+
+            <com.polen.receipt.views.MaterialRippleLayout
+                android:layout_width="@dimen/dip_50"
+                android:layout_height="@dimen/dip_50">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:padding="@dimen/dip_10"
+                    android:src="@drawable/baseline_arrow_back_white_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.polen.receipt.views.MaterialRippleLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/dip_10"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/dip_18"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="New Receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dip_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:id="@+id/edt_title"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:id="@+id/edt_shop_name"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Shop Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:id="@+id/edt_comment"
+                    android:maxLength="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Comment" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20">
+
+                <EditText
+                    android:focusable="false"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:id="@+id/edt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_show_map"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20"
+                android:text="Show In Map"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_upload"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/dip_20"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_default_picture_colored_large"
+                android:id="@+id/image"
+                android:layout_width="@dimen/dip_150"
+                android:layout_height="@dimen/dip_150" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dip_10"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:focusable="false"
+                    android:hint="Date"
+                    android:drawableRight="@drawable/icon_arrow_down_gray_small"
+                    android:id="@+id/edt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_report"
+                android:layout_marginLeft="@dimen/dip_20"
+                android:layout_marginRight="@dimen/dip_20"
+                android:layout_marginBottom="@dimen/dip_20"
+                android:text="Report"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dip_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

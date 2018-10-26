@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.olivehouse2.order.activities.MainActivity">
+
+    <item
+        android:id="@+id/new_menu"
+        android:icon="@drawable/ic_action_gallery_24dp"
+        android:title="New"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/help_menu"
+        android:icon="@drawable/baseline_help_white_24dp"
+        android:title="Help"
+        app:showAsAction="always|collapseActionView"/>
+
+</menu>

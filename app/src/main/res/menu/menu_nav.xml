@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_new"
+            android:icon="@drawable/ic_action_gallery_24dp"
+            android:title="@string/nav_new" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/baseline_help_white_36dp"
+            android:title="@string/nav_help" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_join_as_vendor"-->
+            <!--android:icon="@drawable/ic_action_gallery_24dp"-->
+            <!--android:title="@string/nav_join_as_a_vendor" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_payment_info"-->
+            <!--android:icon="@drawable/ic_action_gallery_24dp"-->
+            <!--android:title="@string/nav_payment_information" />-->
+
+    </group>
+
+    <group
+        android:id="@+id/nonCheckableGroup"
+        android:checkableBehavior="none">
+
+
+        <!--<item-->
+            <!--android:icon="@drawable/ic_action_gallery_24dp"-->
+            <!--android:title="@string/nav_find_us_facebook" />-->
+
+        <!--<item-->
+            <!--android:icon="@drawable/ic_action_gallery_24dp"-->
+            <!--android:title="@string/nav_about_us" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_join_as_vendor"-->
+            <!--android:icon="@drawable/ic_action_gallery_24dp"-->
+            <!--android:title="@string/nav_join_as_a_vendor" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_payment_info"-->
+            <!--android:icon="@drawable/ic_action_gallery_24dp"-->
+            <!--android:title="@string/nav_payment_information" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_logout"-->
+            <!--android:icon="@drawable/logout"-->
+            <!--android:title="@string/nav_logout" />-->
+    </group>
+
+</menu>
